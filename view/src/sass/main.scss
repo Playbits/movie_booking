@@ -1,47 +1,36 @@
+@import "~bootstrap/scss/bootstrap.scss";
 
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-      monospace;
-  }
-  .App {
-    text-align: center;
-}
-.App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 40vmin;
-    pointer-events: none;
-}
+header {
+    background-color: #242424;
+    height: 5.5rem;
+    .logo-container {
+        width: 10.625rem;
+        height: 5.5rem;
+        line-height: 5.5rem;
+        background-color: #fee50e;
+        display: block;
+        text-align: center;
 
-.App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
-
-.App-link {
-    color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
+        img {
+            display: inline-block;
+            vertical-align: middle;
+        }
     }
 
-    to {
-        transform: rotate(360deg);
+    ul {
+        &.menu {
+            margin: 0;
+
+            >li {
+                list-style: none;
+                float: left;
+                width: 20%;
+                height: 100%;
+                line-height: 5.5rem;
+                font-weight: bold;
+                color: #fff;
+                text-align: center;
+            }
+        }
     }
 }
