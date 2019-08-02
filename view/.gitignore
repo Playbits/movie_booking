@@ -21,3 +21,4 @@
 *.log*
 .next
 package-lock.json
+dist
